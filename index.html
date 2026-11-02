@@ -1,105 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#11100e">
-  <title>Northside — Barber & Co.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="grain"></div>
-  <header class="nav">
-    <a class="brand" href="#home" aria-label="Northside home">
-      <span class="brand-mark">N</span>
-      <span>NORTHSIDE<small>BARBER & CO.</small></span>
-    </a>
-    <button class="menu" aria-label="Open menu"><span></span><span></span></button>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#barbers">Barbers</a>
-      <a href="#story">Our story</a>
-    </nav>
-    <button class="btn btn-small open-booking">Book a chair <span>↗</span></button>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <img src="assets/hero.png" alt="Barber giving a client a fresh fade">
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <p class="eyebrow"><span></span> Brooklyn · Est. 2014</p>
-        <h1>LOOK SHARP.<br><em>FEEL</em> UNSTOPPABLE.</h1>
-        <p class="intro">More than a cut. It's your reset button. Classic craft, modern edge, zero shortcuts.</p>
-        <button class="btn open-booking">Book your cut <span>↗</span></button>
-      </div>
-      <div class="hero-foot">
-        <div><small>Open today</small><strong>9:00 AM — 8:00 PM</strong></div>
-        <div class="scroll">Scroll to explore <span>↓</span></div>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="Services ticker">
-      <div>PRECISION CUTS <b>✦</b> CLEAN FADES <b>✦</b> HOT TOWEL SHAVES <b>✦</b> REAL CONVERSATION <b>✦</b> PRECISION CUTS <b>✦</b> CLEAN FADES <b>✦</b></div>
-    </section>
-
-    <section class="services section" id="services">
-      <div class="section-head reveal">
-        <div><p class="eyebrow dark"><span></span> The menu</p><h2>NO FLUFF.<br><em>JUST FRESH.</em></h2></div>
-        <p>Every service starts with a proper consultation and ends only when every detail is right.</p>
-      </div>
-      <div class="service-list">
-        <article class="service reveal"><span>01</span><div><h3>The Signature Cut</h3><p>Consultation, precision cut, hot towel & style.</p></div><strong>$45</strong><button class="select-service" data-service="Signature Cut">↗</button></article>
-        <article class="service reveal"><span>02</span><div><h3>Skin Fade</h3><p>Razor-sharp fade blended down to the skin.</p></div><strong>$50</strong><button class="select-service" data-service="Skin Fade">↗</button></article>
-        <article class="service reveal"><span>03</span><div><h3>Beard Sculpt</h3><p>Shape, line-up, hot towel and conditioning.</p></div><strong>$30</strong><button class="select-service" data-service="Beard Sculpt">↗</button></article>
-        <article class="service reveal"><span>04</span><div><h3>The Full Works</h3><p>Signature cut, beard sculpt and facial reset.</p></div><strong>$75</strong><button class="select-service" data-service="The Full Works">↗</button></article>
-      </div>
-    </section>
-
-    <section class="story" id="story">
-      <div class="story-card reveal">
-        <p class="eyebrow"><span></span> Our philosophy</p>
-        <h2>YOUR HAIR.<br>YOUR RULES.</h2>
-        <p>We built Northside for people who know the details matter. No rushed chairs, no cookie-cutter cuts—just honest craft and a room where you can be yourself.</p>
-        <div class="stats"><div><strong>12K+</strong><small>Fresh cuts</small></div><div><strong>10</strong><small>Years sharp</small></div><div><strong>4.9</strong><small>Avg. rating</small></div></div>
-      </div>
-      <blockquote class="reveal">“A GREAT HAIRCUT<br>DOESN'T CHANGE<br>WHO YOU ARE.<br><em>IT REVEALS IT.</em>”</blockquote>
-    </section>
-
-    <section class="barbers section" id="barbers">
-      <div class="section-head reveal"><div><p class="eyebrow dark"><span></span> Meet the crew</p><h2>GOOD HANDS.<br><em>GREAT ENERGY.</em></h2></div><button class="btn dark-btn open-booking">Find your barber <span>↗</span></button></div>
-      <div class="barber-grid">
-        <article class="barber reveal"><div class="portrait p1"><span>MJ</span></div><h3>Marcus James</h3><p>Fades · Textured cuts</p></article>
-        <article class="barber reveal"><div class="portrait p2"><span>DR</span></div><h3>Diego Rivera</h3><p>Classic cuts · Beards</p></article>
-        <article class="barber reveal"><div class="portrait p3"><span>KW</span></div><h3>Kenji Watanabe</h3><p>Scissor work · Design</p></article>
-      </div>
-    </section>
-
-    <section class="cta">
-      <p class="eyebrow"><span></span> Your chair is waiting</p>
-      <h2>READY FOR<br>YOUR <em>RESET?</em></h2>
-      <button class="btn light-btn open-booking">Book an appointment <span>↗</span></button>
-      <p class="address">218 North 6th Street · Brooklyn, NY · (718) 555-0147</p>
-    </section>
-  </main>
-
-  <footer><div class="brand"><span class="brand-mark">N</span><span>NORTHSIDE<small>BARBER & CO.</small></span></div><p>© 2026 Northside Barber & Co.</p><div><a href="#">Instagram</a><a href="#">TikTok</a></div></footer>
-
-  <dialog id="booking">
-    <button class="close" aria-label="Close">×</button>
-    <p class="eyebrow dark"><span></span> Book your chair</p>
-    <h2>LET'S GET<br>YOU <em>FRESH.</em></h2>
-    <form id="booking-form">
-      <label>Your name<input required placeholder="First & last name"></label>
-      <label>Service<select id="service"><option>Signature Cut</option><option>Skin Fade</option><option>Beard Sculpt</option><option>The Full Works</option></select></label>
-      <div class="form-row"><label>Date<input required type="date"></label><label>Time<select><option>10:00 AM</option><option>12:30 PM</option><option>3:00 PM</option><option>5:30 PM</option></select></label></div>
-      <button class="btn dark-btn" type="submit">Lock it in <span>↗</span></button>
-    </form>
-    <div class="success"><span>✓</span><h3>You're locked in.</h3><p>We'll see you in the chair.</p></div>
-  </dialog>
-  <script src="script.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173b2b"><meta name="description" content="Masters Barbershop Co. — elevated barbering in Minneola, Florida."><title>Masters Barbershop Co. — The Clubhouse</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=DM+Serif+Display:ital@0;1&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
+<header class="nav"><a class="brand" href="#home"><span class="crest">M</span><span>MASTERS<small>BARBERSHOP CO.</small></span></a><nav><a href="#services">The menu</a><a href="#barbers">The lineup</a><a href="#clubhouse">Clubhouse</a></nav><button class="btn small open-booking">Reserve a chair ↗</button></header>
+<main><section class="hero" id="home"><img src="assets/hero.png" alt="A precision haircut at Masters Barbershop"><div class="shade"></div><div class="hero-copy"><p class="eyebrow">Minneola, Florida · Members & guests</p><h1>YOUR BEST<br><em>ROUND</em> YET.</h1><p>Modern barbering built like a clubhouse—good people, sharp details, and a cut that keeps its shape.</p><button class="btn open-booking">Book your tee time ↗</button></div><div class="hero-foot"><span>FIRST TEE · 9AM—7PM</span><span>PAR 5.0 · THE STANDARD</span></div></section>
+<section class="ticker"><div>FRESH CUTS ◆ GOOD ROUNDS ◆ CLUBHOUSE ENERGY ◆ DETAILS MATTER ◆ FRESH CUTS ◆ GOOD ROUNDS ◆ CLUBHOUSE ENERGY ◆ DETAILS MATTER ◆</div></section>
+<section class="section services" id="services"><div class="section-head"><div><p class="eyebrow dark">The scorecard</p><h2>CHOOSE YOUR<br><em>CLUB.</em></h2></div><p>No shortcuts. Every service starts with a consultation and finishes only when the details are right.</p></div><div class="service-list">
+<article><span>01</span><div><h3>The Masters Cut</h3><p>Consultation, precision cut, finish and style.</p></div><strong>$40</strong><button class="select-service" data-service="The Masters Cut">↗</button></article><article><span>02</span><div><h3>Skin Fade</h3><p>Clean blend, razor finish and sharp line work.</p></div><strong>$45</strong><button class="select-service" data-service="Skin Fade">↗</button></article><article><span>03</span><div><h3>Cut + Beard</h3><p>Full cut, beard sculpt and finishing detail.</p></div><strong>$50</strong><button class="select-service" data-service="Cut + Beard">↗</button></article><article><span>04</span><div><h3>Shear Work</h3><p>Shape, movement and a natural grow-out.</p></div><strong>$42</strong><button class="select-service" data-service="Shear Work">↗</button></article></div></section>
+<section class="clubhouse" id="clubhouse"><div><p class="eyebrow">Welcome to the club</p><h2>THE CUT IS<br>ONLY HALF<br><em>THE GAME.</em></h2><p>Masters is where craft meets culture. Come for the appointment, stay for the conversation, leave ready for whatever is next.</p><div class="patches"><span>EST. 2026</span><span>MINNEOLA, FL</span><span>OPEN TO ALL</span></div></div><blockquote>“PLAY IT<br>WHERE IT<br><em>LIES.</em>”</blockquote></section>
+<section class="section" id="barbers"><div class="section-head"><div><p class="eyebrow dark">Meet the lineup</p><h2>PICK YOUR<br><em>PLAYER.</em></h2></div><button class="btn dark-btn open-booking">Reserve a chair ↗</button></div><div class="barber-grid">
+<article class="barber"><div class="portrait p1"><b>01</b><span>ZG</span><i>CAPTAIN</i></div><div class="barber-copy"><small>@ZROGAPPED</small><h3>ZeroGapped</h3><blockquote>“Shape over hype. Every detail has a reason.”</blockquote><button class="choose-barber" data-barber="ZeroGapped">Select barber ↗</button></div></article><article class="barber"><div class="portrait p2"><b>02</b><span>JP</span><i>THE CLOSER</i></div><div class="barber-copy"><small>@JPCUTZ</small><h3>JPCutz</h3><blockquote>“Clean work, good energy, no missed details.”</blockquote><button class="choose-barber" data-barber="JPCutz">Select barber ↗</button></div></article><article class="barber"><div class="portrait p3"><b>03</b><span>CR</span><i>SHOT MAKER</i></div><div class="barber-copy"><small>@CUTZBYRAY</small><h3>Cutzbyray</h3><blockquote>“A sharp finish changes the whole round.”</blockquote><button class="choose-barber" data-barber="Cutzbyray">Select barber ↗</button></div></article></div></section>
+<section class="final-cta"><p>YOUR CHAIR IS WAITING</p><h2>READY TO<br><em>TEE OFF?</em></h2><button class="btn light-btn open-booking">Book an appointment ↗</button><small>102 N US HWY 27 S · MINNEOLA, FL</small></section></main>
+<footer><a class="brand" href="#home"><span class="crest">M</span><span>MASTERS<small>BARBERSHOP CO.</small></span></a><p>© 2026 Masters Barbershop Co.</p><a href="https://www.instagram.com/mastersbarbershopco/" target="_blank" rel="noreferrer">Instagram ↗</a></footer>
+<dialog id="booking"><button class="close" aria-label="Close">×</button><p class="eyebrow dark">Reserve your tee time</p><h2>LOCK IN<br><em>YOUR ROUND.</em></h2><form id="booking-form"><label>Your name<input required name="name" autocomplete="name" placeholder="First & last name"></label><label>Your barber<select id="barber" name="barber"><option>ZeroGapped</option><option>JPCutz</option><option>Cutzbyray</option></select></label><label>Service<select id="service" name="service"><option>The Masters Cut</option><option>Skin Fade</option><option>Cut + Beard</option><option>Shear Work</option></select></label><div class="form-row"><label>Date<input required name="date" type="date"></label><label>Time<select name="time"><option>10:00 AM</option><option>12:30 PM</option><option>3:00 PM</option><option>5:30 PM</option></select></label></div><button class="btn dark-btn" type="submit">Confirm tee time ↗</button></form><div class="success"><span>✓</span><h3>YOU’RE ON THE BOOKS.</h3><p>We’ll see you at the clubhouse.</p></div></dialog><script src="script.js"></script></body></html>
